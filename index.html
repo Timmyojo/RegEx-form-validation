@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RegEx Form Validation</title>
+</head>
+<body>
+    
+    <div class="form">
+        <h2>User Registration</h2>
+
+        <form>
+            <div class="form-control">
+                <input type="text" name="username" placeholder="username">
+                <p>Username can be alphanumeric and contains 5 - 12 characters</p>
+            </div>
+            <div class="form-control">
+                <input type="text" name="email" placeholder="email">
+                <p>Email must be a valid address e.g tim@timtec.com</p>
+            </div>
+            <div class="form-control">
+                <input type="password" name="password" placeholder="password">
+                <p>Password can be alphanumeric(@._and- are also allowed) 8 -12 long</p>
+            </div>
+            <div class="form-control">
+                <input type="text" name="phone" placeholder="phone number">
+                <p>Phone number must be vaid 11 digit NG phonr number</p>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="validate.js"></script>
+</body>
+</html>
